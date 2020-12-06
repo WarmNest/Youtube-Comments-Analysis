@@ -4,8 +4,6 @@ pandas
 flask
 langdetect
 textblob
-bokeh
-plot
 os
 base64
 re
