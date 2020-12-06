@@ -15,8 +15,7 @@ def setAPI():
     TempApi = ["ตรงนี้ใส่ API"]
     timetemp = datetime.datetime.now()
     modtime = timetemp.second%len(TempApi)
-    youTubeApiKey = "AIzaSyAJuYfLo5g_1LjwAaRg5vng8WSPpMRx6e4"
-    #youTubeApiKey = TempApi[modtime]
+    youTubeApiKey = TempApi[modtime]
     service = build('youtube', 'v3', developerKey=youTubeApiKey)
     return service
 
