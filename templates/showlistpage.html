@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Youtube List</title>
+  <link rel="icon" type="image/png"
+    href="https://cdn.discordapp.com/attachments/775269964323618837/775296992007290890/statistics.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <style>
+    header {
+      height: 100%;
+    }
+  </style>
+</head>
+
+
+</head>
+
+<body>
+  <div class="contrainer">
+    <nav class="navbar navbar-expand-sm text-white navbar-fixed-top navbar-custom shadow p-3">
+      <div class=" justify-content-between mx-auto align-middle">
+        <a href="http://bigdataproject.tplinkdns.com:8000/" class="navbar-brand ml-3 text-white">Home</a>
+        <a href="/output_test" class="navbar-brand ml-3 text-white">Accuracy</a>
+        <a href="http://bigdataproject.tplinkdns.com:8000/about.html" class="navbar-brand ml-3 text-white">Member</a>
+      </div>
+    </nav>
+  </div>
+
+  <header>
+    <div class="container px-3 pt-4 pb-4 col-11 col-md-11 col-lg-10 col-xl-8 mx-auto">
+      <div class="row align-items-center justify-content-center text-center mx-auto">
+        <table class="table table-sm mx-auto bg-white">
+          <thead class="table-dark">
+            <tr>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in range(0,len) %}
+            <tr>
+              <td class="align-middle"><a href="https://www.youtube.com/watch?v={{datas['video_id'][row]}}"
+                  target="_blank"><img class="img-fluid"
+                    src="http://img.youtube.com/vi/{{datas['video_id'][row]}}/0.jpg" alt=""></a></td>
+              <td class="align-middle">{{datas['video_title'][row]}}</td>
+              <td class="align-middle"><a href="/choosevideo/{{keyword}}/{{row}}"
+                  class="btn btn-danger btn-xs">pick!</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </header>
+
+  <footer class="container-fluid text-center bg-lightgray d-block pt-3 pb-3">
+    <div class="copyrights">
+      <span class="mb-0">Big Data Project</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

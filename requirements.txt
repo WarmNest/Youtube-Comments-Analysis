@@ -1,0 +1,14 @@
+google-api-client
+demoji
+pandas
+flask
+langdetect
+textblob
+bokeh
+plot
+os
+base64
+re
+matplotlib
+subprocess
+wordcloud
