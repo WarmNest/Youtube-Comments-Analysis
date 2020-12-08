@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube comments analysis</title>
+    <title>Youtube comment - Sentiment Analysis</title>
     <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/775269964323618837/775296992007290890/statistics.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,9 +19,9 @@
     <nav class="navbar navbar-expand-sm text-white navbar-fixed-top navbar-custom shadow p-3">
         <div class="contraner fixed-top"></div>
         <div class="d-block justify-content-between mx-auto align-middle">
-            <a href="http://bigdataproject.tplinkdns.com:8000/" class="navbar-brand ml-3 text-white">Home</a>
+            <a href="/" class="navbar-brand ml-3 text-white">Home</a>
             <a href="/output_test" class="navbar-brand ml-3 text-white">Accuracy</a>
-            <a href="http://bigdataproject.tplinkdns.com:8000/about.html" class="navbar-brand ml-3 text-white">Member</a>
+            <a href="/about.html" class="navbar-brand ml-3 text-white">Member</a>
         </div>
     </nav>
 
@@ -32,7 +32,7 @@
                     src="https://cdn.discordapp.com/attachments/775269964323618837/775271660932300820/youtube.svg"
                     alt=""><br></div>
             <div class="row align-items-center justify-content-center text-center d-block">
-                <h3 class="text-uppercase text-black font-weight-bold">Youtube comments analysis (english only)</h3>
+                <h3 class="text-uppercase text-black font-weight-bold">Youtube comment - Sentiment Analysis</h3>
             </div>
             <!--close row1-->
             <div class="row align-items-center justify-content-center text-center d-block">
@@ -48,7 +48,7 @@
             <!--close row2-->
             <div class="row align-items-center justify-content-center text-center d-flex">
                 <form action="/showlistpage" method="POST">
-                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Keyword.."
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Keyword or Video ID..."
                         id="keyword" name="keyword" style="text-align: center">
                     <!--get the keyword-->
                     <button type="submit"
